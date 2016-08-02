@@ -1,0 +1,8 @@
+#{Symbollic representationg of message you are trying to match}{symbollic_response1}{symbollic_response2}{symbollic_response3};
+#{["must"]["contain"]["this"]["and"]["this"|"or"|"that"]["and"][names.bobby];}{["ok"|respond.agree], ["sounds good"];}{["talk to you later"|"see you tm"|response.generic];};
+#pleasantries -- handles status queries, respond with a generic response 
+{["whats"|"what"|"what"|"up"];}{["bleh"|"blah"|"not much"|"tired"|"sleeps"];}{[questions.status_question];};
+{["how"|"hows"|"it"|"going"];}{["not bad"|"im good"|responses.apathetic];};
+{[questions.status_question_response_apathetic];}{[responses.apathetic];};
+#pleasantires -- handles questions like 'doing ok?'
+{[questions.casual_question_response_affirmative];}{[responses.yes];};
